@@ -1,0 +1,71 @@
+$basePadding: 16px; // 基础边距
+
+$headerHeight: 48px; // 头部高度
+
+$footerHeight: 48px; // 底部导航栏高度
+
+$fontColor: #333333; // 颜色字体
+
+$baseColor: #2699fb; // 基础颜色
+
+$trueColor: #4AD970; // 正确颜色
+
+$falseColor: #FC9C9C; // 错误颜色
+
+$activeColor: #F2F3F5; // 点击背景色
+
+// 字体大小
+$fontSize-s: 12px;
+$fontSize-m-l: 16px;
+$fontSize-m-s: 15px;
+
+// 主题区域基本样式
+@mixin containerStyle() {
+  padding: $headerHeight+1px $basePadding $footerHeight;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+// 背景图样式
+@mixin bgImage() {
+  background: center no-repeat;
+  background-size: cover;
+}
+
+// flex 垂直居中
+@mixin vertical() {
+  display: flex;
+  align-items: center;
+}
+
+// 底部按钮区域
+@mixin bottomBtn {
+  .sub-wrapper {
+    margin-top: 93px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 78px;
+    background: #fff;
+    .btn-sub {
+      @include baseBtn();
+    }
+  }
+}
+
+// 提交按钮基础样式
+@mixin baseBtn {
+  width: 300px;
+  height: 48px;
+  font-size: 15px;
+  color: #fff;
+  border-radius: 4px;
+  background: $baseColor;
+}
+
+@mixin GPU {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
