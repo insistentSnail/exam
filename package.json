@@ -29,7 +29,7 @@
     "babel-plugin-import": "^1.12.2",
     "copy-webpack-plugin": "^5.0.4",
     "lib-flexible": "^0.3.2",
-    "node-sass": "^4.9.0",
+    "node-sass": "^4.13.1",
     "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.6.10"
   }
